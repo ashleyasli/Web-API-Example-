@@ -41,7 +41,10 @@ namespace Ashley.WebApi
             }
 
             app.UseHttpsRedirection();
-            app.UseMvc();
+            app.UseMvc(config => 
+            {
+                //config.MapRoute("defaultRoute", "api/{controller}/{action}");
+            });
         }
     }
 }
