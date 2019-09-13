@@ -1,0 +1,14 @@
+C:\Users\ashley.saylik\Documents\My Practice Projects\WebApi\Ashley.WebApi\Ashley.WebApi\bin\Debug\netcoreapp2.1\Ashley.WebApi.deps.json
+C:\Users\ashley.saylik\Documents\My Practice Projects\WebApi\Ashley.WebApi\Ashley.WebApi\bin\Debug\netcoreapp2.1\Ashley.WebApi.runtimeconfig.json
+C:\Users\ashley.saylik\Documents\My Practice Projects\WebApi\Ashley.WebApi\Ashley.WebApi\bin\Debug\netcoreapp2.1\Ashley.WebApi.runtimeconfig.dev.json
+C:\Users\ashley.saylik\Documents\My Practice Projects\WebApi\Ashley.WebApi\Ashley.WebApi\bin\Debug\netcoreapp2.1\Ashley.WebApi.dll
+C:\Users\ashley.saylik\Documents\My Practice Projects\WebApi\Ashley.WebApi\Ashley.WebApi\bin\Debug\netcoreapp2.1\Ashley.WebApi.pdb
+C:\Users\ashley.saylik\Documents\My Practice Projects\WebApi\Ashley.WebApi\Ashley.WebApi\obj\Debug\netcoreapp2.1\Ashley.WebApi.csprojAssemblyReference.cache
+C:\Users\ashley.saylik\Documents\My Practice Projects\WebApi\Ashley.WebApi\Ashley.WebApi\obj\Debug\netcoreapp2.1\Ashley.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\ashley.saylik\Documents\My Practice Projects\WebApi\Ashley.WebApi\Ashley.WebApi\obj\Debug\netcoreapp2.1\Ashley.WebApi.RazorAssemblyInfo.cache
+C:\Users\ashley.saylik\Documents\My Practice Projects\WebApi\Ashley.WebApi\Ashley.WebApi\obj\Debug\netcoreapp2.1\Ashley.WebApi.RazorAssemblyInfo.cs
+C:\Users\ashley.saylik\Documents\My Practice Projects\WebApi\Ashley.WebApi\Ashley.WebApi\obj\Debug\netcoreapp2.1\Ashley.WebApi.AssemblyInfoInputs.cache
+C:\Users\ashley.saylik\Documents\My Practice Projects\WebApi\Ashley.WebApi\Ashley.WebApi\obj\Debug\netcoreapp2.1\Ashley.WebApi.AssemblyInfo.cs
+C:\Users\ashley.saylik\Documents\My Practice Projects\WebApi\Ashley.WebApi\Ashley.WebApi\obj\Debug\netcoreapp2.1\Ashley.WebApi.RazorTargetAssemblyInfo.cache
+C:\Users\ashley.saylik\Documents\My Practice Projects\WebApi\Ashley.WebApi\Ashley.WebApi\obj\Debug\netcoreapp2.1\Ashley.WebApi.dll
+C:\Users\ashley.saylik\Documents\My Practice Projects\WebApi\Ashley.WebApi\Ashley.WebApi\obj\Debug\netcoreapp2.1\Ashley.WebApi.pdb
