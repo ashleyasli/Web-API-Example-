@@ -9,5 +9,6 @@ namespace Ashley.WebApi.DataAccess
 {
     internal class EfProductDal : EfEntityRepositoryBase<Product, NorthwindContext>, IProductDal
     {
+        
     }
 }
