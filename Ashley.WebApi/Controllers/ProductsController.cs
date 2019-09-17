@@ -1,4 +1,5 @@
 ﻿using Ashley.WebApi.DataAccess;
+using Ashley.WebApi.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -17,11 +18,11 @@ namespace Ashley.WebApi.Controllers
             _productDal = productDal;
         }
         [HttpGet("")]
-       /* public IActionResult Get()
+        public IActionResult Get()
         {
-             var products = _productDal.GetList();
-             return Ok(products);
-        }*/
+            var products = _productDal.GetList();
+            return Ok(products);
+        }
 
         [HttpGet("{productId}")]
         public IActionResult Get(int productId)
@@ -42,6 +43,11 @@ namespace Ashley.WebApi.Controllers
              
             }
             return BadRequest();
+        }
+
+        public IActionResult Post(Product product)
+        {
+            return Ok();
         }
     }
 }
