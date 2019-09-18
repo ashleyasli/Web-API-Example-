@@ -14,7 +14,7 @@ namespace Ashley.WebApi.DataAccess
     {
         public void Add(TEntity entity)
         {
-            using (TContext context = new TContext())
+            using (var context = new TContext())
             {
                 var addedEntity = context.Entry(entity);
                 addedEntity.State = EntityState.Added;
@@ -24,7 +24,7 @@ namespace Ashley.WebApi.DataAccess
 
         public void Delete(TEntity entity)
         {
-            using (TContext context = new TContext())
+            using (var context = new TContext())
             {
                 var deletedEntity = context.Entry(entity);
                 deletedEntity.State = EntityState.Deleted;
@@ -34,13 +34,13 @@ namespace Ashley.WebApi.DataAccess
 
         public TEntity Get(Expression<Func<TEntity, bool>> filter)
         {
-            using (TContext context = new TContext())
+            using (var context = new TContext())
             {
                 return context.Set<TEntity>().SingleOrDefault(filter);
             }
         }
 
-        public List<TEntity> GetAll(Expression<Func<TEntity, bool>> filter = null)
+       /* public List<TEntity> GetAll(Expression<Func<TEntity, bool>> filter = null)
         {
             using (TContext context = new TContext())
             {
@@ -48,11 +48,11 @@ namespace Ashley.WebApi.DataAccess
                     context.Set<TEntity>().ToList() :
                     context.Set<TEntity>().Where(filter).ToList();
             }
-        }
+        }*/
 
         public List<TEntity> GetList(Expression<Func<TEntity, bool>> filter = null)
         {
-            using (TContext context = new TContext())
+            using (var context = new TContext())
             {
                 return filter == null ?
                     context.Set<TEntity>().ToList() :
@@ -62,7 +62,7 @@ namespace Ashley.WebApi.DataAccess
         }
         public void Update(TEntity entity)
         {
-            using (TContext context = new TContext())
+            using (var context = new TContext())
             {
                 var updatedEntity = context.Entry(entity);
                 updatedEntity.State = EntityState.Modified;
