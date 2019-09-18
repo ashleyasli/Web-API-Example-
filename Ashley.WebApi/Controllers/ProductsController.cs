@@ -13,7 +13,7 @@ namespace Ashley.WebApi.Controllers
     {
         IProductDal _productDal;
 
-        internal ProductsController(IProductDal productDal)
+       internal ProductsController(IProductDal productDal)
         {
             _productDal = productDal;
         }
@@ -21,7 +21,7 @@ namespace Ashley.WebApi.Controllers
         public IActionResult Get()
         {
             var products = _productDal.GetList();
-            return Ok(products);
+             return Ok(products);
         }
 
         [HttpGet("{productId}")]
@@ -49,5 +49,6 @@ namespace Ashley.WebApi.Controllers
         {
             return Ok();
         }
+       
     }
 }
