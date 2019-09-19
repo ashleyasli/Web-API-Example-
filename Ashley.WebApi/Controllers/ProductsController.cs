@@ -43,8 +43,25 @@ namespace Ashley.WebApi.Controllers
 
         public IActionResult Post([FromBody]Product product)
         {
-            return Ok();
+            try
+            {
+                _productDal.Add(product);
+                return new StatusCodeResult(201);
+            }
+            catch{ }
+            return BadRequest();
         }
-       
+
+        public IActionResult Put([FromBody]Product product)
+        {
+            try
+            {
+                _productDal.Add(product);
+                return Ok(product);
+            }
+            catch { }
+            return BadRequest();
+        }
     }
 }
+
