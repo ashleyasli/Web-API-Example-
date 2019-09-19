@@ -37,15 +37,11 @@ namespace Ashley.WebApi.Controllers
                 }
                 return Ok(product);
             }
-            catch (Exception)
-            {
-
-             
-            }
+            catch {    }
             return BadRequest();
         }
 
-        public IActionResult Post(Product product)
+        public IActionResult Post([FromBody]Product product)
         {
             return Ok();
         }
