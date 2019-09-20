@@ -52,6 +52,7 @@ namespace Ashley.WebApi.Controllers
             return BadRequest();
         }
 
+        [HttpPut]
         public IActionResult Put([FromBody]Product product)
         {
             try
@@ -60,6 +61,30 @@ namespace Ashley.WebApi.Controllers
                 return Ok(product);
             }
             catch { }
+            return BadRequest();
+        }
+
+        [HttpDelete("productId")]
+        public IActionResult Delete(int productId)
+        {
+            try
+            {
+                _productDal.Delete(new Product { ProductId= productId });
+                return Ok();
+            }
+            catch { }
+            return BadRequest();
+        }
+
+        [HttpGet("GetProductDetails")]
+        public IActionResult GetProductWithDetails()
+        {
+            try
+            {
+                _productDal.GetProductWithDetails();
+                return Ok();
+            }
+            catch  {      }
             return BadRequest();
         }
     }
