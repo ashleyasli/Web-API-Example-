@@ -1,4 +1,5 @@
 ﻿using Ashley.WebApi.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,7 @@ namespace Ashley.WebApi.Controllers
     public class ContactController  : Controller
     {
         [HttpGet("")]
+        [Authorize(Roles = "Admin")]
         public List<ContactModel> Get()
         {
             return new List<ContactModel>
