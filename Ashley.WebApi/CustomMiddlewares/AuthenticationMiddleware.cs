@@ -23,7 +23,16 @@ namespace Ashley.WebApi.CustomMiddlewares
             if(authHeader!=null && authHeader.StartsWith("basic", StringComparison.OrdinalIgnoreCase))
             {
                 var token = authHeader.Substring(6).Trim();
-                var credentialString = Encoding.UTF8.GetString(Convert.FromBase64String(token));
+                var credentialString = "";
+                try
+                {
+                    credentialString = Encoding.UTF8.GetString(Convert.FromBase64String(token));                    
+                }
+                catch 
+                {
+                    context.Response.StatusCode = 500;
+                }
+                
                 var credentials = credentialString.Split(':');
                 if (credentials[0] == "ashley" && credentials[1] == "12345")
                 {
