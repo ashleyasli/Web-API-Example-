@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Ashley.WebApi.CustomMiddlewares;
 using Ashley.WebApi.DataAccess;
 using Ashley.WebApi.Formatters;
 using Microsoft.AspNetCore.Builder;
@@ -44,7 +45,7 @@ namespace Ashley.WebApi
             {
                 app.UseHsts();
             }
-
+            app.UseMiddleware<AuthenticationMiddleware>();
             app.UseHttpsRedirection();
             app.UseMvc(config => 
             {
